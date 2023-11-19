@@ -1,6 +1,10 @@
-import type { Metadata } from 'next';
-import { milne, montserrat_arm, jost } from '@/fonts';
 import './globals.css';
+
+import type { Metadata } from 'next';
+
+import { milne, montserrat_arm, jost } from '@/fonts';
+
+import Header from '@/app/ui/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,7 +32,10 @@ export default function RootLayout({ children, params }: Props) {
       lang={params.lang}
       className={`${font.className} ${milne.variable}`}
     >
-      <body>{children}</body>
+      <body className='overflow-hidden'>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
