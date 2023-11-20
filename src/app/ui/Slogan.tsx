@@ -1,11 +1,7 @@
-type Props = {
-  height: string;
-}
-
 export default function Slogan() {
   return (
     <div 
-      className="flex items-center justify-center font-milne text-customOrange bg-oxford"
+      className="flex items-center justify-center font-milne text-customOrange mt-6"
     >
       <div className="flex flex-col">
         <h2 className="font-bold text-8xl tracking-widest">

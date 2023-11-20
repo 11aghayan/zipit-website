@@ -1,9 +1,10 @@
 import BgImage from "@/app/ui/BgImage";
 
-export default function Home() {
+export default function Page() {
+  
   return (
     <main>
       <BgImage />
     </main>
   );
-}
+};
