@@ -1,9 +1,9 @@
 import BgImage from "@/app/ui/BgImage";
 
-export default function Home() {
+export default function Contacts() {
   return (
     <main>
-      <BgImage />
+      Contacts
     </main>
   );
-}
+};
