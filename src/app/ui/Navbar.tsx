@@ -5,14 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import navRoutes from "@/util/navRoutes";
+import navRoutes from "@/lib/navRoutes";
 import flagArm from '@/assets/flag-arm.svg';
 import flagRus from '@/assets/flag-rus.svg';
+import { ParamsType } from "@/lib/types";
 
 type Props = {
-  params: {
-    lang: 'am' | 'ru';
-  }
+  params: ParamsType;
 }
 
 export default function Navbar({ params }: Props) {
@@ -30,7 +29,8 @@ export default function Navbar({ params }: Props) {
             href={route.path}
             className={clsx(
               'text-x',
-              page === route.path ? 'text-saffron' : 'text-white' 
+              page === route.path ? 'text-saffron' : 'text-white',
+              params.lang === 'am' ? 'text-lg' : 'text-xl'
             )}
           >
             {route.label[params.lang]}

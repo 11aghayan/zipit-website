@@ -8,8 +8,8 @@ export default function PageLayout({ children }: Props) {
   
   return (
     <main className="relative">
-      <BgImage />
       {children}
+      <BgImage />
     </main>
   );
 };

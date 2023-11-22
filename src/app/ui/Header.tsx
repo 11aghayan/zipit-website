@@ -1,6 +1,6 @@
 import Slogan from "@/app/ui/Slogan";
 import Logo from "@/app/ui/Logo";
-import { ParamsType } from "@/types";
+import { ParamsType } from "@/lib/types";
 import Navbar from "./Navbar";
 
 type Props = {

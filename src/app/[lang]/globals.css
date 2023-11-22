@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+main.page {
+  @apply fixed bottom-0 top-[31%] w-full flex  gap-4 px-4;
+}

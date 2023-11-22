@@ -2,10 +2,10 @@ import './globals.css';
 
 import type { Metadata } from 'next';
 
-import { milne, montserrat_arm, jost } from '@/fonts';
+import { milne, montserrat_arm, jost } from '@/lib/fonts';
 
 import Header from '@/app/ui/Header';
-import { ParamsType } from '@/types';
+import { ParamsType } from '@/lib/types';
 
 export const metadata: Metadata = {
   title: 'ZipIt',

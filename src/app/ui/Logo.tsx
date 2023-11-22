@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { ParamsType } from "@/types";
+import { ParamsType } from "@/lib/types";
 import logo from '@/assets/logomark.svg';
 
 type Props = {

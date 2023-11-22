@@ -4,15 +4,15 @@ import { Jost } from 'next/font/google';
 export const milne = localFont({
   src: [
     {
-      path: 'fonts/milne/black.otf',
+      path: '../fonts/milne/black.otf',
       weight: '900'
     },
     {
-      path: 'fonts/milne/extra-bold.otf',
+      path: '../fonts/milne/extra-bold.otf',
       weight: '800'
     },
     {
-      path: 'fonts/milne/bold.otf',
+      path: '../fonts/milne/bold.otf',
       weight: '700'
     }
   ],
@@ -22,19 +22,19 @@ export const milne = localFont({
 export const montserrat_arm = localFont({
   src: [
     {
-      path: 'fonts/montserrat-arm/black.otf',
+      path: '../fonts/montserrat-arm/black.otf',
       weight: '900'
     },
     {
-      path: 'fonts/montserrat-arm/bold.otf',
+      path: '../fonts/montserrat-arm/bold.otf',
       weight: '700'
     },
     {
-      path: 'fonts/montserrat-arm/semi-bold.otf',
+      path: '../fonts/montserrat-arm/semi-bold.otf',
       weight: '600'
     },
     {
-      path: 'fonts/montserrat-arm/medium.otf',
+      path: '../fonts/montserrat-arm/medium.otf',
       weight: '500'
     },
   ],

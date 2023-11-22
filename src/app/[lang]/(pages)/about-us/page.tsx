@@ -1,8 +1,10 @@
+import ContentContainer from "@/app/ui/ContentContainer";
+
 export default function AboutUs() {
   
   return (
-    <main>
-      AboutUs
+    <main className="page">
+      <ContentContainer />
     </main>
   );
 };
