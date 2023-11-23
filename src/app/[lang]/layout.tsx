@@ -29,7 +29,7 @@ export default function RootLayout({ children, params }: Props) {
   return (
     <html 
       lang={params.lang}
-      className={`${font.className} ${milne.variable}`}
+      className={`${font.className} ${milne.variable} antialiased`}
     >
       <body className='overflow-hidden'>
         <Header 

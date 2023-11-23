@@ -7,7 +7,7 @@ export default function ContentContainer() {
         w-full  
         z-10 
         bg-white 
-        rounded-t-xl
+        rounded-t-md
         shadow-lg
       "
     >

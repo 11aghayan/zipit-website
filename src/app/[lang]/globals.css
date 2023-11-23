@@ -3,5 +3,23 @@
 @tailwind utilities;
 
 main.page {
-  @apply fixed bottom-0 top-[31%] w-full flex  gap-4 px-4;
+  @apply fixed bottom-0 top-[31%] w-full flex gap-4 px-4;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2bc53;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34685c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f493f;
 }
