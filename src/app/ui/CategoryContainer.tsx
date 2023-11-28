@@ -16,13 +16,22 @@ export default async function CategoryContainer({ lang }: Props) {
     am: 'Կատեգորիաներ',
     ru: 'Категории'
   };
+
+  const notLoaded = {
+    am: 'Կատեգորիաները չեն բեռնվել',
+    ru: 'Категории не были загружены'
+  };
   
   if (categories === null) {
     return (
       <section className={className}>
-        <h3>{containerHeader[lang]}</h3>
-        <p>Something went wrong</p>
-        <p>Categories not loaded</p>
+        <h3
+          className={clsx('font-semibold', lang === 'am' ? "text-2xl" : 'text-3xl')}
+        >
+          {containerHeader[lang]}
+        </h3>
+        <p className="text-red-500 mt-5 text-xl text-center font-milne">Error 500</p>
+        <p className="text-red-500 mt-5 text-lg text-center">{notLoaded[lang]}</p>
       </section>
     );
   }

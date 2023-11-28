@@ -29,15 +29,14 @@ export default function CategoryLink({ category }: Props) {
         text-lg 
         border-y 
         p-1 
-        bg-saffron
         border-amazon/25
         hover:bg-amazon
         hover:text-saffron
+        transition-colors
+        duration-75
       `,
       lang === 'am' ? 'text-lg' : 'text-xl',
-      {
-        'text-saffron bg-amazon': sp.get('categories') === category.id,
-      }
+      sp.get('categories') === category.id ? 'text-saffron bg-amazon' : 'text-amazon bg-saffron'
       )}
     >
       <p>{category.label}</p>

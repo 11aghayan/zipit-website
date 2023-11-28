@@ -15,7 +15,9 @@ export default function Home({ params, searchParams }: Props) {
         lang={params.lang}
         searchParams={searchParams}
       />
-      <ContentContainer />
+      <ContentContainer 
+        lang={params.lang}
+      />
     </main>
   );
 }

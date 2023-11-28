@@ -7,7 +7,7 @@ type Props = {
 export default function PageLayout({ children }: Props) {
   
   return (
-    <main className="relative">
+    <main>
       {children}
       <BgImage />
     </main>
