@@ -1,5 +1,7 @@
 import CategoryContainer from "@/app/ui/CategoryContainer";
 import ContentContainer from "@/app/ui/ContentContainer";
+import Items from "@/app/ui/items/Items";
+import PageNav from "@/app/ui/pageNav/PageNav";
 import { ParamsType, SearchParamsType } from "@/lib/types";
 
 type Props = {
@@ -8,16 +10,36 @@ type Props = {
 }
 
 export default function Home({ params, searchParams }: Props) {
+  const lang = params.lang;
   
   return (
     <main className="page">
       <CategoryContainer 
-        lang={params.lang}
+        lang={lang}
         searchParams={searchParams}
       />
-      <ContentContainer 
-        lang={params.lang}
-      />
+      <ContentContainer>
+        <div
+          className="
+            flex
+            flex-col
+            gap-2
+            justify-between
+            h-full
+          "
+        >
+          <div>
+            <Items 
+              lang={lang}
+            />
+          </div>
+          <div className="">
+            <PageNav 
+              lang={lang}
+            />
+          </div>
+        </div>
+      </ContentContainer>
     </main>
   );
 }

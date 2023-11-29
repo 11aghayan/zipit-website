@@ -9,7 +9,7 @@ export default function PageNav({ lang }: Props) {
 
   return (
     <section
-      className="w-full flex items-center justify-center gap-4"
+      className="w-full flex justify-center gap-4"
     >
       <Button 
         direction="prev"

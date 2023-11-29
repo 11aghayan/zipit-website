@@ -1,30 +1,21 @@
-import { LangType } from "@/lib/types";
-import PageNav from "@/app/ui/pageNav/PageNav";
-import Items from "@/app/ui/items/Items";
-
 type Props = {
-  lang: LangType;
+  children: React.ReactNode;
 }
 
-export default function ContentContainer({ lang }: Props) {
+export default function ContentContainer({ children }: Props) {
 
   return (
     <section
       className="
         p-3
-        flex
-        flex-col
-        gap-2
         w-full  
         bg-white 
         rounded-t-md
         shadow-lg
+        overflow-auto
       "
     >
-      <Items />
-      <PageNav 
-        lang={lang}
-      />
+      {children}
     </section>
   );
 };

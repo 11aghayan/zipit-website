@@ -28,7 +28,7 @@ export type ItemType = {
 
 export type ItemPreviewType = {
   id: string;
-  category: ItemCategoryType;
+  // category: ItemCategoryType;
   name: string;
   price: number;
   promo: PromoType;

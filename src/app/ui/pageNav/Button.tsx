@@ -27,6 +27,7 @@ export default function Button({ direction, lang }: Props) {
         hover:opacity-80
         disabled:bg-gray-300
         disabled:opacity-100
+        shadow-sm
       "
     >
       {directionLang[direction][lang]}
