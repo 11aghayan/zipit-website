@@ -16,14 +16,14 @@ export default function Items({ lang }: Props) {
       //   id: '2311412412',
       //   name: 'category'
       // },
-      name: 'capki podshipniki vtulki',
+      name: 'capki podshipniki vtulki u eli esim inch',
       photo: {
         color: 'sev',
         qty: 10,
         src: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
       },
       price: 10000,
-      promo: 5000,
+      promo: null,
       size: {
         unit: 'cm',
         val: 100

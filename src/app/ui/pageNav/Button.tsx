@@ -24,7 +24,6 @@ export default function Button({ direction, lang }: Props) {
         p-2 rounded-lg 
         bg-amazon 
         text-white
-        hover:opacity-80
         disabled:bg-gray-300
         disabled:opacity-100
         shadow-sm
