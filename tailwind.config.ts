@@ -17,6 +17,13 @@ const config: Config = {
       },
       fontFamily: {
         milne: ['var(--font-milne)']
+      },
+      keyframes: {
+        shimmer: {
+          "100%": {
+            "transform": "translateY(100%)",
+          },
+        }
       }
     },
   },
