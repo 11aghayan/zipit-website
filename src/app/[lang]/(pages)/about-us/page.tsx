@@ -4,7 +4,9 @@ export default function AboutUs() {
   
   return (
     <main className="page">
-      <ContentContainer />
+      <ContentContainer >
+        About Us
+      </ContentContainer>
     </main>
   );
 };

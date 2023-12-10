@@ -1,5 +1,6 @@
 import { ItemPreviewType, LangType } from "@/lib/types";
 import ItemCard from "./ItemCard";
+import ItemCardLoader from "./ItemCardLoader";
 
 type Props = {
   lang: LangType;
